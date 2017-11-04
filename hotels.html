@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="#" width="" height="" alt="logo">
+          <img src="#" width="" height="" alt="Логотип Седоны">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -20,36 +20,33 @@
     </header>
 
     <main class="container">
-
       <h1 class="visually-hidden">Гостиницы</h1>
 
       <section class="search-filters">
         <h2 class="visually-hidden">Критерии поиска</h2>
+        <!-- Здесь будет форма-->
 
-        <nav class="search-filters-infrastructure">
+        <section class="search-filters-infrastructure">
           <h3>Инфраструктура:</h3>
           <ul class="infrastructure-navigation">
             <li>Бассейн</li>
             <li>Парковка</li>
             <li>Wi-Fi</li>
           </ul>
-        </nav>      
+        </section>
         
-        <nav class="search-filters-accommodation">
+        <section class="search-filters-accommodation">
           <h3>Тип жилья:</h3>
           <ul class="accommodation-navigation">
             <li>Гостиница</li>
             <li>Мотель</li>
             <li>Апартаменты</li>
           </ul>
-        </nav>
+        </section>
 
         <section class="search-filters-value">
           <h3>Стоимость в сутки (р):</h3>
-          <!-- Здесь будет форма 
-            <p></p>
-            <p></p>
-          -->          
+          <input type="range">
         </section>
 
         <button>Показать</button>
@@ -61,20 +58,20 @@
 
         <header class="search-results-header">
           <p class="search-results-quantity">
-                <span>Найдено:</span>
-                <span>3</span>
+            <span>Найдено:</span>
+            <span>3</span>
           </p>
-          <nav class="search-results-sorting">
+          <div class="search-results-sorting">
             <span>Сортировка:</span>
-            <ul class="sorting-navigation">
+            <ul class="sorting-items">
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
             </ul>
-          </nav>
+          </div>
           <div class="search-results-pagging">
-            <span>Prev</span>
-            <span>Next</span>
+            <span><a href="#">Prev</a></span>
+            <span><a href="#">Next</a></span>
           </div>
         </header>
 
@@ -128,22 +125,19 @@
 
       </section>
     </main>
-    
+
     <footer class="main-footer">
-      <p>#visitsedona</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-btn" href="#">Твитер</a></li>
-          <li><a class="social-btn" href="#">Фейсбук</a></li>
-          <li><a class="social-btn" href="#">Ютуб</a></li>
+        <p>#visitsedona</p>
+        <ul class="footer-social">
+          <li><a class="social-button visually-hidden" href="#">Twitter</a></li>
+          <li><a class="social-button visually-hidden" href="#">Facebook</a></li>
+          <li><a class="social-button visually-hidden" href="#">Youtube</a></li>
         </ul>
-      </div>
-      <p class="footer-copyright">
-        <b>Website by</b>
-        <a class="btn" href="#">HTML Academy</a>
-      </p>
-    </footer>
-    
+        <p class="footer-copyright">
+          <b>Website by</b>
+          <a class="footer-logo" href="#">HTML Academy</a>
+        </p>
+      </footer>
+
   </body>
 </html>
-    
