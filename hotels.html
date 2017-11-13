@@ -24,33 +24,75 @@
 
       <section class="search-filters">
         <h2 class="visually-hidden">Критерии поиска</h2>
-        <!-- Здесь будет форма-->
 
-        <section class="search-filters-infrastructure">
-          <h3>Инфраструктура:</h3>
-          <ul class="infrastructure-items">
-            <li>Бассейн</li>
-            <li>Парковка</li>
-            <li>Wi-Fi</li>
-          </ul>
-        </section>
+        <form class="search-filters-form" action="" method="post">
 
-        <section class="search-filters-accommodation">
+          <section class="search-filters-infrastructure">
+            <h3>Инфраструктура:</h3>
+            <p class="infrastructure-item">
+              <label class="infrastructure-pool-checkbox">
+                <input type="checkbox" name="pool" class="visually-hidden" checked>
+                 <span class="checkbox-indicator"></span>
+                 Бассейн
+              </label>
+            </p>
+            <p class="infrastructure-item">
+              <label class="infrastructure-parking-checkbox">
+                <input type="checkbox" name="parking" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                Парковка
+              </label>
+            </p>
+            <p class="infrastructure-item">
+              <label class="infrastructure-wi-fi-checkbox">
+                <input type="checkbox" name="wi-fi" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                Wi-Fi
+              </label>
+            </p>
+          </section>
+
+        <section class="search-filters-housing">
           <h3>Тип жилья:</h3>
-          <ul class="accommodation-items">
-            <li>Гостиница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
-          </ul>
+          <p class="housing-item">
+            <label class="housing-hotel-checkbox">
+              <input type="checkbox" name="hotel" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              Гостиница
+            </label>
+          </p>
+          <p class="housing-item">
+            <label class="housing-motel-checkbox">
+              <input type="checkbox" name="motel" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              Мотель
+            </label>
+          </p>
+          <p class="housing-item">
+            <label class="housing-apartments-checkbox">
+              <input type="checkbox" name="apartments" class="visually-hidden" checked>
+              <span class="checkbox-indicator"></span>
+              Апартаменты
+            </label>
+          </p>
         </section>
 
         <section class="search-filters-value">
           <h3>Стоимость в сутки (р):</h3>
-          <input type="range">
+          <p class="value-item">
+            <label class="visually-hidden">Стоимость от и до:</label>
+            <input type="text" name="value-from" value="" placeholder="от 0">
+            <input type="text" name="value-to" value="" placeholder="до 3000">
+          </p>
+          <p class="value-item">
+            <label class="visually-hidden">Стоимость от и до:</label>
+            <input type="range" name="value-range">
+          </p>
         </section>
 
-        <button>Показать</button>
+        <button type="submit">Показать</button>
 
+        </form>
       </section>
 
       <section class="search-results">
@@ -82,7 +124,7 @@
           <span>от 4000 р.</span>
           <p class="search-results-item-controls">
             <a href="#">Подробнее</a>
-            <button>Забронировать</button>
+            <button type="submit">Забронировать</button>
           </p>
           <section class="rating">
               <h3 class="visually-hidden">Рейтинг</h3>
@@ -98,7 +140,7 @@
           <span>от 3000 р.</span>
           <p class="search-results-item-controls">
             <a href="#">Подробнее</a>
-            <button>Забронировать</button>
+            <button type="submit">Забронировать</button>
           </p>
           <section class="rating">
             <h3 class="visually-hidden">Рейтинг</h3>
@@ -114,7 +156,7 @@
           <span>от 2000 р.</span>
           <p class="search-results-item-controls">
             <a href="#">Подробнее</a>
-            <button>Забронировать</button>
+            <button type="submit">Забронировать</button>
           </p>
           <section class="rating">
             <h3 class="visually-hidden">Рейтинг</h3>

@@ -79,24 +79,47 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
-        <a href="#">Поиск гостиницы в Седоне</a>
+        <button class="button" type="submit">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="modal modal-search">
         <h2>Поиск гостиницы в Седоне</h2>
-        <!-- Здесь будет форма
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p>
-              <button></button>
-            </p>
-        -->
+        <form class="search-form" action="" method="post">
+          <p class="search-item">
+            <label>
+              Дата заезда:
+              <input class="search-date" type="text" placeholder="24 апреля 2017">
+            </label>
+          </p>
+          <p class="search-item">
+            <label>
+              Дата выезда:
+              <input class="search-date" type="text" placeholder="4 июля 2017">
+            </label>
+          </p>
+          <p class="search-item half-width">
+            <label>
+              Взрослые:
+              <input class="search-number" type="text" placeholder="2">
+            </label>
+          </p>
+          <p class="search-item half-width">
+            <label>
+              Дети:
+              <input class="search-number" type="text" placeholder="0">
+            </label>
+          </p>
+          <p class="search-item">
+            <button class="button" type="submit">Найти</button>
+          </p>
+        </form>
       </section>
 
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/index/map.jpg" width="1280" height="747" alt="Седона, Аризона 86336, США">
+        </p>
       </section>
 
     </main>
