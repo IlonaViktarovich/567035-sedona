@@ -4,7 +4,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -80,36 +79,41 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
-        <button class="button" type="submit">Поиск гостиницы в Седоне</button>
+        <button class="button">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="modal modal-search">
         <h2>Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="" method="post">
           <p class="search-item">
-            <label>
-              Дата заезда:
-              <!-- <input class="search-date" type="date" name="start-date" placeholder="24 апреля 2017"> -->
-              <input type="text"pattern="[1-31]{1,2} [а-я,А-Я]{3,8} [2017]{4}" name="start-date" placeholder="24 апреля 2017">
-            </label>
+            <div>
+              <label for="search-start-date">Дата заезда:</label>
+              <input id="search-start-date" class="search-date" type="text" name="start-date" placeholder="24 апреля 2017">
+              <button class="button"><img src="img/icons/ic-calendar.svg" width="12" height="12" alt="календарь"></button>
+            </div>
           </p>
           <p class="search-item">
-            <label>
-              Дата выезда:
-              <input class="search-date" type="date" name="finish-date" placeholder="4 июля 2017">
-            </label>
+            <div>
+              <label for="search-finish-date">Дата выезда:</label>
+              <input id="search-finish-date" class="search-date" type="text" name="finish-date" placeholder="4 июля 2017">
+              <button class="button"><img src="img/icons/ic-calendar.svg" width="12" height="12" alt="календарь"></button>
+            </div>
           </p>
           <p class="search-item half-width">
-            <label>
-              Взрослые:
-              <input class="search-amount" type="text" name="adults" placeholder="2">
-            </label>
+            <div>
+              <label  for="search-adults">Взрослые:</label>
+              <button class="button">-</button>
+              <input id="search-adults" class="search-amount" type="text" name="adults" placeholder="2">
+              <button class="button">+</button>
+            </div>
           </p>
           <p class="search-item half-width">
-            <label>
-              Дети:
-              <input class="search-amount" type="text" name="children" placeholder="0">
-            </label>
+            <div>
+              <label  for="search-children">Дети:</label>
+              <button class="button">-</button>
+              <input id="search-children" class="search-amount" type="text" name="children" placeholder="0">
+              <button class="button">+</button>
+            </div>
           </p>
           <p class="search-item">
             <button class="button" type="submit">Найти</button>
@@ -119,9 +123,9 @@
 
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <p>
+        <div>
           <img src="img/index/map.jpg" width="1280" height="747" alt="Седона, Аризона 86336, США">
-        </p>
+        </div>
       </section>
 
     </main>

@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -26,7 +25,7 @@
       <section class="search-filters">
         <h2 class="visually-hidden">Критерии поиска</h2>
 
-        <form class="search-filters-form" action="" method="post" oninput="valueoutput.value=valuecount.value">
+        <form class="search-filters-form" action="" method="post">
 
           <section class="search-filters-infrastructure">
             <h3>Инфраструктура:</h3>
@@ -82,9 +81,8 @@
           <h3>Стоимость в сутки (р):</h3>
           <p class="value-item">
             <label class="visually-hidden">Стоимость от и до:</label>
-            <!-- <input type="text" name="value-from" value="" placeholder="от 0">
-            <input type="text" name="value-to" value="" placeholder="до 3000"> -->
-            <output name="valueoutput">550</output>
+            <input type="text" name="value-from" value="" placeholder="от 0">
+            <input type="text" name="value-to" value="" placeholder="до 3000">
           </p>
           <p class="value-item">
             <label class="visually-hidden">Стоимость от и до:</label>
@@ -93,7 +91,6 @@
         </section>
 
         <button type="submit">Показать</button>
-
         </form>
       </section>
 
