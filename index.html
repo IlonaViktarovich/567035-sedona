@@ -4,6 +4,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -24,12 +27,12 @@
       <h1 class="visually-hidden">Седона</h1>
 
       <div class="enter">
-          <img src="#" width="" height="" alt="Welcome to the gorgeous Sedona">
+          <img src="img/index/about-sedona.png" width="458px" height="352px" alt="Welcome to the gorgeous Sedona">
       </div>
 
       <section class="features">
         <h2 class="visually-hidden">О Седоне</h2>
-        <p class="features-lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="features-lead">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
         <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
         <ul class="features-list">
           <li class="features-item">
@@ -79,56 +82,48 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
-        <button class="button">Поиск гостиницы в Седоне</button>
+        <button class="button btn-brown">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="modal modal-search">
         <h2>Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="" method="post">
           <p class="search-item">
-            <div>
-              <label for="search-start-date">Дата заезда:</label>
-              <input id="search-start-date" class="search-date" type="text" name="start-date" placeholder="24 апреля 2017">
-              <button class="button" type="button">
-                <span class="visually-hidden">Показать календарь</span>
-              </button>
-            </div>
+            <label for="search-start-date">Дата заезда:</label>
+            <input id="search-start-date" class="search-date" type="text" name="start-date" placeholder="24 апреля 2017">
+            <button class="button" type="button">
+              <span class="visually-hidden">Показать календарь</span>
+            </button>
           </p>
           <p class="search-item">
-            <div>
-              <label for="search-finish-date">Дата выезда:</label>
-              <input id="search-finish-date" class="search-date" type="text" name="finish-date" placeholder="4 июля 2017">
-              <button class="button" type="button">
-                <span class="visually-hidden">Показать календарь</span>
-              </button>
-            </div>
+            <label for="search-finish-date">Дата выезда:</label>
+            <input id="search-finish-date" class="search-date" type="text" name="finish-date" placeholder="4 июля 2017">
+            <button class="button" type="button">
+              <span class="visually-hidden">Показать календарь</span>
+            </button>
           </p>
           <p class="search-item half-width">
-            <div>
-              <label  for="search-adults">Взрослые:</label>
-              <button class="button" type="button">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
-              <input id="search-adults" class="search-amount" type="text" name="adults" placeholder="2">
-              <button class="button" type="button">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
-            </div>
+            <label  for="search-adults">Взрослые:</label>
+            <button class="button" type="button">
+              <span class="visually-hidden">Уменьшить</span>
+            </button>
+            <input id="search-adults" class="search-amount" type="text" name="adults" placeholder="2">
+            <button class="button" type="button">
+              <span class="visually-hidden">Увеличить</span>
+            </button>
           </p>
           <p class="search-item half-width">
-            <div>
-              <label  for="search-children">Дети:</label>
-              <button class="button" type="button">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
-              <input id="search-children" class="search-amount" type="text" name="children" placeholder="0">
-              <button class="button" type="button">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
-            </div>
+            <label  for="search-children">Дети:</label>
+            <button class="button" type="button">
+              <span class="visually-hidden">Уменьшить</span>
+            </button>
+            <input id="search-children" class="search-amount" type="text" name="children" placeholder="0">
+            <button class="button" type="button">
+              <span class="visually-hidden">Увеличить</span>
+            </button>
           </p>
           <p class="search-item">
-            <button class="button" type="submit">Найти</button>
+            <button class="button btn-blue" type="submit">Найти</button>
           </p>
         </form>
       </section>
@@ -146,23 +141,23 @@
         <p>#visitsedona</p>
         <ul class="footer-social">
           <li>
-            <a class="social-button" href="#">
+            <a class="social-btn" href="#">
               <span class="visually-hidden">Twitter</span>
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-btn" href="#">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-btn" href="#">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
         </ul>
         <p class="footer-copyright">
-          <b>Website by</b>
+          <span>Website by</span>
           <a class="footer-logo" href="#">
             <span class="visually-hidden">HTML Academy</span>
           </a>
