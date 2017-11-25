@@ -91,9 +91,9 @@
               <label class="visually-hidden">Стоимость от и до:</label>
               <input type="range" id="valuecount" name="value-range" min="0" max="3000" step="50">
             </p>
+            <button class="button btn-white" type="submit">Показать</button>
           </section>
 
-          <button class="button btn-white" type="submit">Показать</button>
         </form>
 
       </section>
@@ -121,15 +121,17 @@
         </header>
 
         <article class="search-results-item">
-          <img src="img/hotels/hotel01.jpg" width="135" height="90" alt="Amara Resort & Spa">
-          <h3>Amara Resort & Spa</h3>
-          <span>Гостиница</span>
-          <span>от 4000 р.</span>
-          <p class="search-results-item-controls">
-            <a class="button btn-blue" href="#">Подробнее</a>
-            <button class="button btn-brown" type="submit">Забронировать</button>
-          </p>
-          <section class="rating">
+          <img class="search-results-item-img" src="img/hotels/hotel01.jpg" width="135" height="90" alt="Amara Resort & Spa">
+          <div class="search-results-item-block">
+            <h3>Amara Resort & Spa</h3>
+            <span>Гостиница</span>
+            <span>от 4000 р.</span>
+            <p class="search-results-item-controls">
+              <a class="button btn-blue" href="#">Подробнее</a>
+              <button class="button btn-brown" type="submit">Забронировать</button>
+            </p>
+          </div>
+          <section class="search-results-item-rating">
               <h3 class="visually-hidden">Рейтинг</h3>
               <p>****</p>
               <p>Рейтинг: 8,5</p>
@@ -137,15 +139,17 @@
         </article>
 
         <article class="search-results-item">
-          <img src="img/hotels/hotel02.jpg" width="135" height="90" alt="Desert Quail Inn">
-          <h3>Desert Quail Inn</h3>
-          <span>Мотель</span>
-          <span>от 3000 р.</span>
-          <p class="search-results-item-controls">
-            <a class="button btn-blue" href="#">Подробнее</a>
-            <button class="button btn-brown" type="submit">Забронировать</button>
-          </p>
-          <section class="rating">
+          <img class="search-results-item-img" src="img/hotels/hotel02.jpg" width="135" height="90" alt="Desert Quail Inn">
+          <div class="search-results-item-block">
+            <h3>Desert Quail Inn</h3>
+            <span>Мотель</span>
+            <span>от 3000 р.</span>
+            <p class="search-results-item-controls">
+              <a class="button btn-blue" href="#">Подробнее</a>
+              <button class="button btn-brown" type="submit">Забронировать</button>
+            </p>
+          </div>
+          <section class="search-results-item-rating">
             <h3 class="visually-hidden">Рейтинг</h3>
             <p>***</p>
             <p>Рейтинг: 8,9</p>
@@ -153,26 +157,29 @@
         </article>
 
         <article class="search-results-item">
-          <img src="img/hotels/hotel03.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-          <h3>Villas at Poco Diablo</h3>
-          <span>Апартаменты</span>
-          <span>от 2000 р.</span>
-          <p class="search-results-item-controls">
-            <a class="button btn-blue" href="#">Подробнее</a>
-            <button class="button btn-brown" type="submit">Забронировать</button>
-          </p>
-          <section class="rating">
+          <img class="search-results-item-img" src="img/hotels/hotel03.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          <div class="search-results-item-block">
+            <h3>Villas at Poco Diablo</h3>
+            <span>Апартаменты</span>
+            <span>от 2000 р.</span>
+            <p class="search-results-item-controls">
+              <a class="button btn-blue" href="#">Подробнее</a>
+              <button class="button btn-brown" type="submit">Забронировать</button>
+            </p>
+          </div>
+          <section class="search-results-item-rating">
             <h3 class="visually-hidden">Рейтинг</h3>
             <p>**</p>
             <p>Рейтинг: 9,2</p>
           </section>
         </article>
+        </div>
 
       </section>
     </main>
 
     <footer class="main-footer">
-        <p>#visitsedona</p>
+        <p class="footer-info">#visitsedona</p>
         <ul class="footer-social">
           <li>
             <a class="social-btn" href="#">
@@ -191,7 +198,7 @@
           </li>
         </ul>
         <p class="footer-copyright">
-          <b>Website by</b>
+          <span>Website by</span>
           <a class="footer-logo" href="#">
             <span class="visually-hidden">HTML Academy</span>
           </a>

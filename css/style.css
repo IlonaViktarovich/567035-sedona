@@ -103,6 +103,7 @@ a.arrow {
   background-repeat: no-repeat, no-repeat;
   text-align: center;
   vertical-align: middle;
+  min-height: 508px;
 }
 
 .main-navigation {
@@ -167,16 +168,14 @@ a.arrow {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
+  color: #000000;
 }
 
-.features-inner-list h3{
+.features-inner-list h4{
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .search-item input {
@@ -210,6 +209,7 @@ a.arrow {
 .search-filters h3 {
   font-size: 16px;
   font-weight: 700;
+  margin: 0;
 }
 
 .value-item input{
@@ -233,12 +233,30 @@ a.arrow {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
   text-align: center;
   vertical-align: middle;
 }
 
 .features-reasons {
   line-height: 26px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.search-lead {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search-info {
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 55px;
 }
 
 .search-results-quantity span{
@@ -255,8 +273,6 @@ a.arrow {
   color: #000000;
   background-color: #ffffff;
 }
-
-
 
 .main-footer {
   color: #000000;
@@ -293,4 +309,238 @@ a.arrow {
 
 .footer-copyright a:active {
   color: #bdbbbc;
+}
+
+/* ----------Сеточные стили---------- */
+html {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+
+  outline: 1px solid cornflowerblue;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 73px;
+  margin-top: -70px;
+  height: 56px;
+
+  outline: 1px solid fuchsia;
+}
+
+.site-navigation li {
+  align-self: center;
+  width: 25%;
+
+  outline: 1px solid rgb(233, 14, 233);
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-self: stretch;
+
+  min-height: 260px;
+  outline: 1px solid #9f36db;
+}
+
+.features-item-blue-block {
+  background-color: #81b3d2;
+  width: 400px;
+}
+
+.features-item-img {
+  width: auto;
+
+  outline: 1px solid #e45453;
+}
+
+.features-inner-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 330px;
+}
+
+.features-inner-item {
+  width: 100%;
+
+  outline: 1px solid #e47813;
+}
+
+.features-item-grey-block {
+  background-color: #ededed;
+  width: 400px;
+}
+
+.inner-column {
+  padding: 0 60px;
+}
+
+.main-footer {
+  padding: 35px 73px;
+  display: flex;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-info {
+  margin: 0;
+  width: 33%;
+  margin-right: 88px;
+  outline: 1px solid #e47813;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 33%;
+  outline: 1px solid #e47813;
+}
+
+.footer-copyright {
+  margin: 0;
+  width: 33%;
+  margin-left: 88px;
+  outline: 1px solid #e47813;
+}
+
+/*-------------- hotels ----------------*/
+
+.search-filters-form {
+  margin: 0;
+  padding: 30px 73px;
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 218px;
+}
+
+.search-filters-infrastructure {
+  width: 240px;
+  outline: 1px solid #e47813;
+}
+
+.search-filters-housing {
+  width: 240px;
+  outline: 1px solid #e47813;
+}
+
+.search-filters-value {
+  margin-left: auto;
+  outline: 1px solid #e47813;
+}
+
+.search-results-header {
+  margin: 0;
+  padding: 30px 73px;
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 86px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results-quantity {
+  margin-right: 30px;
+  padding: 0;
+  width: 135px;
+
+  outline: 1px solid #e47813;
+}
+
+.search-results-sorting {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  outline: 1px solid #e47813;
+}
+
+.sorting-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-results-pagging {
+  margin-left: auto;
+  align-self: center;
+  outline: 1px solid #e47813;
+}
+
+.search-results-item {
+  margin: 0;
+  padding: 30px 73px;
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-results-item-img {
+  margin-right: 30px;
+}
+
+.search-results-item-block {
+  outline: 1px solid #e47813;
+}
+
+.search-results-item-rating {
+  margin-left: auto;
+
+  outline: 1px solid #e47813;
 }
