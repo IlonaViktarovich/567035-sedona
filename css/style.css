@@ -594,6 +594,8 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-height: 256px;
+  flex-grow: 1;
+  align-self: stretch;
 }
 
 .features-item-blue-block {
@@ -608,7 +610,23 @@ body {
 .features-item-grey-block {
   background-color: #ededed;
   width: 400px;
+  min-width: 256px;
+  outline:1px solid red;
 }
+
+@media screen and (min-width: 1106px) and (max-width: 1250px) {
+  .features-item-grey-block {
+  width: 100%;
+  flex-grow: 1;
+  }
+  }
+
+@media screen and (min-width: 256px) and (max-width: 1105px) {
+  .features-item-grey-block {
+  width: 256px;
+  flex-grow: 1;
+  }
+  }
 
 .features-item-img-wrapper {
   -webkit-box-flex: 2;
