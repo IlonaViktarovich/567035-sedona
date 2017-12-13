@@ -220,9 +220,10 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-grey-block p {
+  white-space: pre-wrap;
   margin: 0 15%;
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 18px;
 }
 
 .white,
@@ -235,36 +236,37 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 700;
   color: #000000;
-  margin: 0px;
+  margin: 0 auto;
   margin-top: 160px;
   margin-bottom: 25px;
   position: relative;
+  width: 165px;
 }
 
 .features-inner-list p {
-  margin: 0 12.5%;
-  margin-bottom: 80px;
+  margin: 0 14%;
+  margin-bottom: 60px;
 }
 
 .housing>h4::before {
   content: url("../img/index/housing.svg");
   position: absolute;
   bottom: 47px;
-  left: 40%;
+  left: 28%;
 }
 
 .food>h4::before {
   content: url("../img/index/food.svg");
   position: absolute;
   bottom: 47px;
-  left: 40%;
+  left: 27%;
 }
 
 .presents>h4::before {
   content: url("../img/index/presents.svg");
   position: absolute;
   bottom: 47px;
-  left: 42%;
+  left: 30%;
 }
 
 .search-item input {
@@ -345,8 +347,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
   text-align: center;
   vertical-align: middle;
-  padding: 0 30%;
-  margin: 0;
+  width: 450px;
+  margin: 0 auto;
   margin-bottom: 27px;
 }
 
@@ -604,27 +606,18 @@ body {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  min-height: 256px;
+  max-height: 256px;
 }
 
 .features-item-grey-block {
   background-color: #ededed;
   width: 400px;
-  min-width: 256px;
-  outline:1px solid red;
 }
 
-@media screen and (min-width: 1106px) and (max-width: 1250px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-item-grey-block {
-  width: 100%;
-  flex-grow: 1;
-  }
-  }
-
-@media screen and (min-width: 256px) and (max-width: 1105px) {
-  .features-item-grey-block {
-  width: 256px;
-  flex-grow: 1;
+    width: 256px;
+    flex-grow: 1;
   }
   }
 
@@ -641,6 +634,12 @@ body {
 .features-item-img {
   margin-top: -10%;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-item-img {
+    margin-top: 0;
+  }
+  }
 
 .features-inner-list {
   margin: 0;

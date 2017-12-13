@@ -1,7 +1,5 @@
-
 var link = document.querySelector(".toggle-btn");
 var popup = document.querySelector(".modal-search");
-
 var form = popup.querySelector("form");
 var date = popup.querySelector(".search-date");
 var people = popup.querySelector(".search-amount");
