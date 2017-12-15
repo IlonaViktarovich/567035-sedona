@@ -611,12 +611,13 @@ body {
 
 .features-item-grey-block {
   background-color: #ededed;
-  width: 400px;
+  width: 394px;
+  flex-grow: 1;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .features-item-grey-block {
-    width: 256px;
+    width: 250px;
     flex-grow: 1;
   }
   }
@@ -635,7 +636,7 @@ body {
   margin-top: -10%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
   .features-item-img {
     margin-top: 0;
   }
@@ -1080,6 +1081,13 @@ body {
   animation-name: bounce;
   animation-duration: 0.6s;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-search {
+    left: 100px;
+    margin-left: auto;
+  }
+  }
 
 .modal-show {
   display: none;
